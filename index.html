@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animated Download Button</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #6e8efb, #a777e3);
+    }
+
+    .download-container {
+      text-align: center;
+    }
+
+    .download-btn {
+      display: inline-block;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+      color: white;
+      padding: 15px 30px;
+      border-radius: 50px;
+      background: linear-gradient(45deg, #ff7eb3, #ff758c);
+      box-shadow: 0 10px 20px rgba(255, 120, 180, 0.3);
+      transition: all 0.4s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .download-btn span {
+      position: relative;
+      z-index: 1;
+    }
+
+    .download-btn:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(45deg, #ff85a2, #ffb0d1);
+      transition: all 0.4s ease;
+    }
+
+    .download-btn:hover:before {
+      left: 0;
+    }
+
+    .download-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 12px 24px rgba(255, 120, 180, 0.5);
+    }
+  </style>
+</head>
+<body>
+  <div class="download-container">
+    <!-- Replace 'your-file.zip' with your ZIP file path -->
+    <a href="OB46 FF Playstore V7A By Mr Bluestacks.apk" class="download-btn" download>
+      <span>Download</span>
+    </a>
+  </div>
+</body>
+</html>
